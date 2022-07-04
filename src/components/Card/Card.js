@@ -4,6 +4,7 @@ import './Card.css'
 import { Link } from 'react-router-dom'
 
 
+
 const CardItem = ({ imagen, titulo, precio, descripcion, stock, id, categoria }) => {
 
     return(

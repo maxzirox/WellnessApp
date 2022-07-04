@@ -4,7 +4,7 @@ import ItemCount from '../ItemCount/ItemCount'
 import './Item.css'
 import { Link } from 'react-router-dom'
 import CartContext from '../../context/CartContext'
-
+import Swal from 'sweetalert2'
 
 const ItemDetail = ({ data }) => {
     
@@ -24,6 +24,11 @@ const ItemDetail = ({ data }) => {
             setShowButton(true)
             addProductToCart({...data, cantidad: count})
             setCount(1)
+            Swal.fire(
+                'Producto agregado',
+                `x${count} ${data.titulo}`,
+                'success'
+              )
             
         }else{
             alert("sin stock")

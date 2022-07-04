@@ -69,8 +69,6 @@ const CartWidget = () =>{
                 {cartListItems.map((item) => {
                     subTotal= item.precio * item.cantidad
                     total = subTotal + total
-                    
-                console.log("item de widget", item)
                 return( 
                     <Paper
                         sx={{

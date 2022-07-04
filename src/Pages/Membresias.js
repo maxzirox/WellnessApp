@@ -16,6 +16,7 @@ import {useState, useEffect, useContext} from 'react';
 import {  collection, getDocs } from 'firebase/firestore'
 import dataBase from '../utils/firebaseConfig'
 import CartContext from '../context/CartContext';
+import Swal from 'sweetalert2'
 
 
 function Membresias() {
@@ -31,18 +32,24 @@ function Membresias() {
     })
     return membresiaList
 }
-useEffect( () => {
-  getMembresias()
-  .then( (response) => {
+  useEffect( () => {
+    getMembresias()
+    .then( (response) => {
       setMembresia(response)
       
       })
 
-   }, [membresia])
+  }, [membresia])
 
    const onAdd = (membresia) => {
       addProductToCart({...membresia, cantidad: 1})
+      Swal.fire(
+        `${membresia.titulo} agregado`,
+        `al carrito`,
+        'success'
+      )
    }
+
   return (
     <React.Fragment>
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
@@ -76,7 +83,7 @@ useEffect( () => {
             >
               <Card>
                 <CardHeader
-                  title={tier.nombre}
+                  title={tier.titulo}
                   titleTypographyProps={{ align: 'center' }}
                   action={tier.titulo === 'Plan Full' ? <StarIcon /> : null}
                   sx={{

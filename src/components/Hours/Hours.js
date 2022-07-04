@@ -6,7 +6,7 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import {addDoc, collection} from 'firebase/firestore'
 import dataBase from '../../utils/firebaseConfig'
-
+import Swal from 'sweetalert2'
 
 const Hours = () =>{
     const [value, setValue] = useState();
@@ -36,6 +36,11 @@ const Hours = () =>{
     const onAdd = (e) =>{
         e.preventDefault()
         agendar({...formValue, horario: value})
+        Swal.fire(
+          'felicidades se agendo con exito',
+          `Cod: ${success} <br><br> ${formValue.nombre} se ha enviado el detalle a su correo ${formValue.mail} <br> Horario agendado: ${value}`,
+          'success'
+        )
     }
 
     return(
