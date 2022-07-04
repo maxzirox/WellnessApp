@@ -13,6 +13,8 @@ import ProductList from './Pages/ProductList'
 import Agendar from './Pages/Agendar'
 import Carrito from './Pages/Carrito'
 import { CartProvider } from './context/CartContext'
+import Footer from './components/Footer/Footer'
+
 
 
 
@@ -38,6 +40,7 @@ function App() {
               <Route path="/pagar" element={<Pagar />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
+            <Footer/>
         </BrowserRouter>
       </CartProvider>
     </div>

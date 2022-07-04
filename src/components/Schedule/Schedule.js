@@ -53,7 +53,7 @@ const Schedule = () => {
   return (
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider', display: 'flex', justifyContent: 'center' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+        <Tabs variant="scrollable" scrollButtons="auto" value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab label="Lunes" {...a11yProps(0)} />
           <Tab label="Martes" {...a11yProps(1)} />
           <Tab label="Miercoles" {...a11yProps(2)} />
