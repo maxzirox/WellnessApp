@@ -9,7 +9,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import StarIcon from '@mui/icons-material/StarBorder';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import Container from '@mui/material/Container';
 import '../App.css';

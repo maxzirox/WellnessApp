@@ -7,7 +7,6 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import serviciosMock from '../utils/serviciosMock';
 import { useState, useEffect } from 'react';
-import {Grid} from '@mui/material';
 import '../css/servicios.css';
 
 const Servicios = () => {

@@ -1,7 +1,6 @@
 import CardList from '../components/CardList/CardList'
-import {useState, useEffect} from 'react';
-import {  doc, getDocs } from 'firebase/firestore'
-import { collection, query, where } from "firebase/firestore";
+import {useState, useEffect} from 'react'
+import { collection, getDocs } from "firebase/firestore"
 import dataBase from '../utils/firebaseConfig'
 import { useParams } from 'react-router-dom'
 

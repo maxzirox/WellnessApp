@@ -3,12 +3,10 @@ import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
-import ButtonBase from '@mui/material/ButtonBase';
 import CartContext from '../context/CartContext';
 import { Button } from '@mui/material'
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import DeleteIcon from '@mui/icons-material/Delete';
-import ItemCount from '../components/ItemCount/ItemCount';
 import { Link } from 'react-router-dom'
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import PaymentIcon from '@mui/icons-material/Payment';

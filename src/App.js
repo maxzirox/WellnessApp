@@ -18,16 +18,7 @@ import { CartProvider } from './context/CartContext'
 
 
 function App() {
-  //llamamos una api utilizando fetch que nos devuelve una lista de usuarios
-  /*useEffect( () => {
-    fetch('https://pokeapi.co/api/v2/ability/battle-armor')
-    .then((response) => {
-      return response.json()
-    })
-    .then((res) =>{
-      console.log("respuesta: ", res)
-    })
-  },[])*/
+
   return (
     <div className="App">
       <CartProvider>
@@ -49,12 +40,6 @@ function App() {
             </Routes>
         </BrowserRouter>
       </CartProvider>
-      
-
-     
-      {/*<div>
-        <CardListContainer/>
-      </div>*/}
     </div>
   );
 }

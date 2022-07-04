@@ -10,7 +10,6 @@ import Menu from '@mui/material/Menu';
 import { Button } from '@mui/material'
 import { useContext, useState } from 'react';
 import DeleteIcon from '@mui/icons-material/Delete';
-import ItemCount from '../ItemCount/ItemCount';
 import { Link } from 'react-router-dom'
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
