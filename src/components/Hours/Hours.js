@@ -71,7 +71,6 @@ const Hours = () =>{
           sx={{ width: 250, alignSelf: 'center', marginTop: 2 }}
         />
         
-      <FormControl sx={{ width: 250, alignSelf: 'center', marginTop: 2 }}>
         <InputLabel id="demo-simple-select-label" >horas</InputLabel>
         <Select
           labelId="demo-simple-select-label"
@@ -91,8 +90,6 @@ const Hours = () =>{
           <MenuItem value={'19:00 a 20:00 PM'}>19:00 a 20:00 PM</MenuItem>
           <MenuItem value={'20:30 a 21:30 PM'}>20:30 a 21:30 PM</MenuItem>
         </Select>
-      </FormControl>
-    
         <Button
           sx={{ width: 250, alignSelf: 'center', marginTop: 2 }}
           type='button'
