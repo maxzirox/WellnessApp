@@ -28,7 +28,7 @@ const CartWidget = () =>{
     const { removeProductToCart } = useContext(CartContext)
     const { addProductToCart } = useContext(CartContext)
     const [anchorEl, setAnchorEl] = useState(null);
-    const [contador, setContador] = useState(0)
+
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
@@ -38,7 +38,7 @@ const CartWidget = () =>{
     }
     let total=0
     let subTotal=0
-    let cantidad=0
+
 
     
     return(

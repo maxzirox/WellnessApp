@@ -92,7 +92,7 @@ const NavBar = () => {
             </Menu>
           </Box>
           <Link to={'/'}>
-          <img src={logo} className="logo"/>
+          <img src={logo} className="logo" alt='logo'/>
           </Link>
           <Typography
             variant="h5"

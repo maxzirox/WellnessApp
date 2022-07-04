@@ -7,14 +7,6 @@ const CartContext = createContext()
 const CartProvider = ({children}) => {
     const [cartListItems, setCartListItems] = useState([])
     const [totalPrice, setTotalPrice] = useState(0)
-    const [formValue, setFormValue] = useState({
-    nombre: '',
-    mail: '',
-    telefono: ''
-
-  })
-    
-
 
     const addProductToCart = (product) => {
         let isInCart = cartListItems.find(cartItem => cartItem.id === product.id)

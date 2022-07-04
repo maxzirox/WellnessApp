@@ -6,7 +6,6 @@ import dataBase from '../../utils/firebaseConfig'
 
 const CardListContainer = () => {
     const [products, setProducts] = useState([])
-    const [stock, setStock] = useState(10)
             
     const getProducts = async () => {
 

@@ -21,7 +21,7 @@ const ProductList = () => {
 
     const filtrarCategoria = (arrayProductos) => {
         return arrayProductos.map( (item) =>{
-            if(item.categoria == categoria) {
+            if(item.categoria === categoria) {
                 return setProducts(products => [...products, item])
             }
         })

@@ -1,5 +1,5 @@
 import CardItem from '../Card/Card';
-import {Container, Grid} from '@mui/material'
+import {Grid} from '@mui/material'
 
 
 const CardList = ({products}) => {

@@ -52,7 +52,7 @@ const ItemDetail = ({ data }) => {
                     
                     { !showButton ?
                         <><ItemCount stock={stock} actualizar={setCount} contador={count} mostrarBoton={setShowButton}/>
-                        <Button variant='contained' style={{ backgroundColor: '#FF5900' }} onClick={() => onAdd(count)} disabled={data.stock < count || data.stock == 0}>Agregar</Button></>  
+                        <Button variant='contained' style={{ backgroundColor: '#FF5900' }} onClick={() => onAdd(count)} disabled={data.stock < count || data.stock === 0}>Agregar</Button></>  
                         :
                         <Button variant='contained' style={{backgroundColor: '#FF5900'}}> <Link to='/carrito' style={{textDecoration: 'none', color: 'aliceblue'}}>Ir al carrito</Link></Button>}
                 </Container >
