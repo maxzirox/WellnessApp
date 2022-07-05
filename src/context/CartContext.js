@@ -26,7 +26,6 @@ const CartProvider = ({children}) => {
         let isInCart = cartListItems.find(cartItem => cartItem.id === producto.id)
         if(isInCart){
             setCartListItems((product) => product.filter((item) => item.cantidad ))
-            
             producto.cantidad = producto.cantidad - 1
         }
         

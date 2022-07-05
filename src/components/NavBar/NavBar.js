@@ -73,8 +73,8 @@ const NavBar = () => {
                 display: { xs: 'block', md: 'none'},
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+              {pages.map((page, i) => (
+                <MenuItem key={i} onClick={handleCloseNavMenu}>
                   <Link to={`/${page}`}  style={{  textDecoration: 'none', color: 'black'}}>{page}</Link>
                 </MenuItem>
               ))}
@@ -104,10 +104,10 @@ const NavBar = () => {
           
           
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {pages.map((page, i) => (
                (page === 'Productos') ?
-            <div key={page}>
-            <Button
+            <div key={i}>
+            <Typography
                 style={{  marginRight: '10px', textDecoration: 'none', color: 'black', fontWeight: 700, textShadow: '1px 1px yellow', display: 'block' }}
                 id="fade-button"
                 aria-controls={open ? 'fade-menu' : undefined}
@@ -117,7 +117,7 @@ const NavBar = () => {
                 
               >
                 {page}
-              </Button><Menu
+              </Typography><Menu
                 id="fade-menu"
                 MenuListProps={{
                   'aria-labelledby': 'fade-button',
@@ -154,7 +154,7 @@ const NavBar = () => {
                 style={{ marginRight: '10px', textDecoration: 'none', color: 'black', fontWeight: 700, textShadow: '1px 1px yellow', display: 'block' }}
                 className='linkPages'
                 to={`/${page}`}
-        
+                key={i}
                 onClick={handleCloseNavMenu}
               >
                {page}
