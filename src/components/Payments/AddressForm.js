@@ -59,10 +59,10 @@ const AddressForm = () =>{
         <div>
           {showOrder ? 
             <div>
-              <Grid item container direction="column" xs={12} sm={6}>
-            <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
-              Codigo de compra:
-            </Typography>
+            <Grid item container direction="column" sx={{  textAlign: 'center' }} xs={12} sm={6}>
+              <Typography variant="h6" gutterBottom sx={{ mt: 2, textAlign: 'center' }}>
+                Codigo de compra:
+              </Typography>
               {success}
           </Grid>
         <List disablePadding>
@@ -88,7 +88,7 @@ const AddressForm = () =>{
           </ListItem>
         </List>
         <Grid container spacing={2}>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6} sx={{ alignSelf: 'center', textAlign: 'center' }}>
             <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
               Cliente
             </Typography>

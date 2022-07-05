@@ -22,7 +22,7 @@ const ProductList = () => {
     const filtrarCategoria = (arrayProductos) => {
         return arrayProductos.map( (item) =>{
             if(item.categoria === categoria) {
-                return setProducts(products => [...products, item])
+            return setProducts(products => [...products, item])
             }
         })
     }

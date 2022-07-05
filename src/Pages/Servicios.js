@@ -8,6 +8,8 @@ import Typography from '@mui/material/Typography';
 import serviciosMock from '../utils/serviciosMock';
 import { useState, useEffect } from 'react';
 import '../css/servicios.css';
+import Swal from 'sweetalert2'
+
 
 const Servicios = () => {
     const [servicio, setServicio] = useState([])
@@ -21,14 +23,13 @@ const Servicios = () => {
       }
     
     useEffect( () => {
-        //primer llamamos a la funcion que devuelve la promesa
         getServicios()
-        //con el .then le decimos que cada vez que la promesa responda mueste un console.log
         .then( (respuesta) => {
-        //console.log("respuesta promesa: ", response)
         setServicio(respuesta)
         })
     }, [])
+
+
 
     return (
         <>
@@ -58,8 +59,21 @@ const Servicios = () => {
                   </Typography>
                 </CardContent>
                 <CardActions className='botonesServ'>
-                  <Button className="btnA" variant="outlined" size="small">Agendar</Button>
-                  <Button className='botonB' variant="outlined" size="small">Mas info</Button>
+                  <Button 
+                    onClick={()=>{Swal.fire({
+                    title: `${d.job}`,
+                    text: `${d.desc}`,
+                    imageUrl: `${d.img}`,
+                    imageWidth: 400,
+                    imageHeight: 200,
+                    imageAlt: `${d.name}`,
+                    })}} 
+                    className='botonB' 
+                    variant="outlined" 
+                    size="small"
+                    >
+                      Mas info
+                    </Button>
                 </CardActions>
                 </div>
               </Card>

@@ -34,7 +34,7 @@ const Footer = () => {
         >
           <Container maxWidth="sm">
             <Typography variant="body1">
-              My sticky footer can be found here.
+              Wellness GYM el gimnasio donde lograras tus metas.
             </Typography>
             <Copyright />
           </Container>
