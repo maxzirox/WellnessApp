@@ -160,11 +160,7 @@ const NavBar = () => {
                {page}
               </Link>
             ))}
-            {cartListItems.length === 1 && (
-                    
-                    <CartWidget/>
-                    
-                )}
+            
              
           </Box>
            
