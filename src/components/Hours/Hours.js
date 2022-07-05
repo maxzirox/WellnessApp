@@ -2,7 +2,6 @@ import { Button, TextField, Grid } from '@mui/material'
 import { useState } from 'react'
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import {addDoc, collection} from 'firebase/firestore'
 import dataBase from '../../utils/firebaseConfig'
@@ -78,6 +77,7 @@ const Hours = () =>{
           value={value}
           label="Age"
           onChange={handleChange}
+          sx={{ width: 250, alignSelf: 'center', marginTop: 2 }}
           
         >
           <MenuItem value={'8:30 a 9:30 am'}>8:30 a 9:30 am</MenuItem>
