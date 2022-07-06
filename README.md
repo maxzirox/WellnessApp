@@ -28,3 +28,5 @@ To Visit App:
 
 `localhost:3000/`  
 
+
+![image](https://github.com/maxzirox/WellnessApp/blob/main/public/wellnesGym.gif)
