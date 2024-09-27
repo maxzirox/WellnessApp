@@ -9,7 +9,6 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import CartWidget from '../CartWidget/CartWidget';
 import { Link } from 'react-router-dom';
@@ -81,9 +80,12 @@ const NavBar = () => {
               
             </Menu>
           </Box>
-          <Link to={'/'}>
-          <img src={logo} className="logo" alt='logo'/>
-          </Link>
+          <Box paddingRight={10}>
+            <Link to={'/'}>
+            <img src={logo} className="logo" alt='logo'/>
+            </Link>
+          </Box>
+
           <Typography
             variant="h5"
             noWrap
@@ -117,7 +119,9 @@ const NavBar = () => {
                 
               >
                 {page}
-              </Typography><Menu
+              </Typography>
+              
+              <Menu
                 id="fade-menu"
                 MenuListProps={{
                   'aria-labelledby': 'fade-button',

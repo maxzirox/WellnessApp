@@ -11,7 +11,7 @@ const CardItem = ({ imagen, titulo, precio, descripcion, stock, id, categoria })
 
         <CardContent className='cardContenedor'>
             <div className="cardItem">    
-            <img src={`/${imagen}`} alt="Producto"/>       
+            <img src={`${imagen}`} alt="Producto"/>       
             <h3>{titulo}</h3>
             <Button  variant={'contained'} style={{backgroundColor: 'orange'}} >
                 <Link to={`/productos/${id}`} style={ {textDecoration: 'none', color: 'aliceblue' } } >Detalles</Link>
